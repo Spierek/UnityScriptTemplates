@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class #SCRIPTNAME# : MonoBehaviour {
+	#region Variables
+
+	#endregion
+
+	#region Monobehaviour
+	private void Awake() {
+
+	}
+	
+	private void Update() {
+
+	}
+	#endregion
+
+	#region Methods
+
+	#endregion
+}

@@ -1,0 +1,36 @@
+﻿using UnityEngine;
+using System.Collections.Generic;
+
+public class #SCRIPTNAME# : MonoBehaviour {
+	#region Variables
+	private static #SCRIPTNAME# m_Instance;
+	#endregion
+
+	#region Singleton
+	[RuntimeInitializeOnLoadMethod]
+	private static void CreateSingleton() {
+		if (m_Instance == null) {
+			GameObject go = new GameObject("#SCRIPTNAME#");
+			m_Instance = go.AddComponent<#SCRIPTNAME#>();
+			go.hideFlags = HideFlags.HideInInspector | HideFlags.HideInHierarchy;
+			DontDestroyOnLoad(go);
+
+			m_Instance.Initialize();
+		}
+	}
+
+	private void Initialize() {
+
+	}
+	#endregion
+
+	#region Monobehaviour
+	private void LateUpdate() {
+
+	}
+	#endregion
+
+	#region Methods
+
+	#endregion
+}
